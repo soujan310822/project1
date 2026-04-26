@@ -16,7 +16,7 @@ and classifies it into categories.
 ## Formula used
 BMI=weight in (Kg)/height^2 in (m)
           or 
-BMI=weight in (lbs)/height^2 in (inches)
+BMI=703*weight in (lbs)/height^2 in (inches)
 
 ## How to Run
 1. Compile the program:
