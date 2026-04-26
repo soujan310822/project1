@@ -32,11 +32,10 @@ public class BMI {
                     height=input.nextDouble();
                     System.out.print("Enter weight in pounds(lbs): ");
                     weight=input.nextDouble();
-                    bmi_rating=weight/Math.pow(height,2);
+                    bmi_rating=703*weight/Math.pow(height,2);
 
             }
-
-
+            default -> System.out.println("Invalid unit system,please try again with correct unit system (either 1 or 2)");
         }
         System.out.println("   ---BMI reading---  ");
         System.out.printf("your BMI rating is : %.2f and according to the BMI rating you are ",bmi_rating);
