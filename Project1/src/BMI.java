@@ -1,7 +1,6 @@
 import java.util.Scanner;
 public class BMI {
-    // static method
-    private static void BMI_Rating(double bmi_index){
+     static void BMI_Rating(double bmi_index){
         if(bmi_index <=18.5)
             System.out.println("UnderWeight");
         else if(bmi_index>18.5 && bmi_index<24.9)
@@ -17,7 +16,7 @@ public class BMI {
         double weight;
         double height;
         double bmi_rating=0;
-        System.out.print("Enter 1 for SI units,2 for U.S customary imperial units:  ");
+        System.out.print("Enter 1 for SI units, 2 for U.S customary imperial units:  ");
         units=input.nextInt();
         switch (units) {
             case 1-> {
@@ -40,7 +39,7 @@ public class BMI {
 
         }
         System.out.println("   ---BMI reading---  ");
-        System.out.printf("your BMI rating: %.2f and according to BMI rating you are ",bmi_rating);
+        System.out.printf("your BMI rating is : %.2f and according to the BMI rating you are ",bmi_rating);
         BMI.BMI_Rating(bmi_rating);
 
 
